@@ -16,3 +16,4 @@ unpackage/dist/dev/
 *.pyc
 /docs/.vuepress/.temp/
 /docs/.vuepress/.cache/
+/.idea/
