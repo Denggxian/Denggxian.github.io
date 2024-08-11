@@ -12,46 +12,40 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/images/hero.jpg',
     navbar: [
-		// '/',
-		// '/get-started',
-		// {
-  //        text: '测试叶',
-  //        link: '/get-started',
-		// },
 		{
 		  text: 'Java',
 		  prefix: '/java/',
-		  children: ['aa', 'bb'],
-		},
-		{
-		  text: '前端',
-		  prefix: '/group/',
-		  children: ['/get-started', '/get-started'],
+		  children: ['record','springboot','test'],
 		},
 		{
 		  text: 'linux',
-		  prefix: '/group/',
-		  children: ['/get-started', '/get-started'],
+		  prefix: '/linux/',
+		  children: ['linux','docker','nginx', 'k8s'],
 		},
 		{
 		  text: 'git',
-		  prefix: '/group/',
-		  children: ['/get-started', '/get-started'],
+		  prefix: '/git/',
+		  children: ['git-line'],
 		},
 		{
-		  text: 'Java',
-		  prefix: '/group/',
-		  children: ['/get-started', '/get-started'],
+		  text: '鸿蒙&仓颉',
+		  children: ['/hm/cangjie', '/hm/hm-os'],
 		},
+        {
+          text: '前端',
+          prefix: '/view/',
+          children: ['create_vuepress'],
+        },
+        '/md/md',
 	  ],
   }),
   plugins: [
-	  //看板娘插件
+	  //看板娘插件,
       oml2dPlugin({
         models: [
           {
             // path: 'https://cdn.jsdelivr.net/gh/Eikanya/Live2d-model/Live2D/Senko_Normals/senko.model3.json',
-			path: 'https://model.oml2d.com/mai/model.json',
+			path: 'https://model.oml2d.com/mai/model.json', //小埋
             scale: 0.12,
             position: [-10, 50],
             stageStyle: {
